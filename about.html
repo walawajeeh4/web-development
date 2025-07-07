@@ -18,7 +18,7 @@
         <section>
             <p class="name-style">my name is walaa wajeeh</p>
             <p>I am 17 years old</p>
-            <p>my school is nablus vocational secandary school</p>
+            <p id="P1">my school is nablus vocational secandary school</p>
             
             <ul>
                 <li style="color: blue; text-align: center;">swimming</li>
@@ -27,5 +27,17 @@
                 
             </ul>
         </section>
+        <button onclick="hellofunction()">click here</button>
+        <p id="text"></p>
+        <script>
+            var h1element = document.querySelector('h1');
+            h1element.innerHTML = "modifay the text using javascript"
+             var p1 = document.getElementById('P1');
+            p1.innerHTML = "paragraph 1 changed using js";
+            function hellofunction(){
+                var textvar = document.getElementById('text')
+                textvar.innerHTML ="button clicked! hello"
+            }
+        </script>
     </body>
 </html>
